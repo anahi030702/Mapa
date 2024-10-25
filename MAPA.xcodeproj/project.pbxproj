@@ -6,8 +6,25 @@
 	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		885382EE2CCB05CC00BEBBE0 /* Ciudad Berlin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 885382E82CCB05CC00BEBBE0 /* Ciudad Berlin.jpg */; };
+		885382EF2CCB05CC00BEBBE0 /* Archivo LatLon Ciudades.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 885382E72CCB05CC00BEBBE0 /* Archivo LatLon Ciudades.rtf */; };
+		885382F02CCB05CC00BEBBE0 /* Ciudad Washington.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 885382EC2CCB05CC00BEBBE0 /* Ciudad Washington.jpg */; };
+		885382F12CCB05CC00BEBBE0 /* Ciudad Paris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 885382EA2CCB05CC00BEBBE0 /* Ciudad Paris.jpg */; };
+		885382F22CCB05CC00BEBBE0 /* Ciudad Mexico.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 885382E92CCB05CC00BEBBE0 /* Ciudad Mexico.jpg */; };
+		885382F32CCB05CC00BEBBE0 /* Ciudad Tokio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 885382EB2CCB05CC00BEBBE0 /* Ciudad Tokio.jpg */; };
+		885382F62CCB07B100BEBBE0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885382F52CCB07B100BEBBE0 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		88135D662CC872F200BBC40D /* MAPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885382E72CCB05CC00BEBBE0 /* Archivo LatLon Ciudades.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Archivo LatLon Ciudades.rtf"; sourceTree = "<group>"; };
+		885382E82CCB05CC00BEBBE0 /* Ciudad Berlin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ciudad Berlin.jpg"; sourceTree = "<group>"; };
+		885382E92CCB05CC00BEBBE0 /* Ciudad Mexico.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ciudad Mexico.jpg"; sourceTree = "<group>"; };
+		885382EA2CCB05CC00BEBBE0 /* Ciudad Paris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ciudad Paris.jpg"; sourceTree = "<group>"; };
+		885382EB2CCB05CC00BEBBE0 /* Ciudad Tokio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ciudad Tokio.jpg"; sourceTree = "<group>"; };
+		885382EC2CCB05CC00BEBBE0 /* Ciudad Washington.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ciudad Washington.jpg"; sourceTree = "<group>"; };
+		885382F52CCB07B100BEBBE0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885382F62CCB07B100BEBBE0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +56,9 @@
 		88135D5D2CC872F200BBC40D = {
 			isa = PBXGroup;
 			children = (
+				885382ED2CCB05CC00BEBBE0 /* Ciudades 2 */,
 				88135D682CC872F200BBC40D /* MAPA */,
+				885382F42CCB07B100BEBBE0 /* Frameworks */,
 				88135D672CC872F200BBC40D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +69,27 @@
 				88135D662CC872F200BBC40D /* MAPA.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		885382ED2CCB05CC00BEBBE0 /* Ciudades 2 */ = {
+			isa = PBXGroup;
+			children = (
+				885382E72CCB05CC00BEBBE0 /* Archivo LatLon Ciudades.rtf */,
+				885382E82CCB05CC00BEBBE0 /* Ciudad Berlin.jpg */,
+				885382E92CCB05CC00BEBBE0 /* Ciudad Mexico.jpg */,
+				885382EA2CCB05CC00BEBBE0 /* Ciudad Paris.jpg */,
+				885382EB2CCB05CC00BEBBE0 /* Ciudad Tokio.jpg */,
+				885382EC2CCB05CC00BEBBE0 /* Ciudad Washington.jpg */,
+			);
+			path = "Ciudades 2";
+			sourceTree = "<group>";
+		};
+		885382F42CCB07B100BEBBE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				885382F52CCB07B100BEBBE0 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +156,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885382EE2CCB05CC00BEBBE0 /* Ciudad Berlin.jpg in Resources */,
+				885382EF2CCB05CC00BEBBE0 /* Archivo LatLon Ciudades.rtf in Resources */,
+				885382F02CCB05CC00BEBBE0 /* Ciudad Washington.jpg in Resources */,
+				885382F12CCB05CC00BEBBE0 /* Ciudad Paris.jpg in Resources */,
+				885382F22CCB05CC00BEBBE0 /* Ciudad Mexico.jpg in Resources */,
+				885382F32CCB05CC00BEBBE0 /* Ciudad Tokio.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

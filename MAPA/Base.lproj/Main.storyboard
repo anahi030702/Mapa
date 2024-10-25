@@ -32,13 +32,17 @@
                                 <rect key="frame" x="0.0" y="107" width="440" height="815"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rR-rL-XDO">
-                                        <rect key="frame" x="22" y="10" width="396" height="162"/>
+                                        <rect key="frame" x="22" y="0.0" width="396" height="162"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="162" id="0Hg-mY-va6"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="kWn-ma-vUP"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="2Zj-ei-AWn"/>
+                                        </connections>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais: Alemania" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6V-Oz-UYl">
-                                        <rect key="frame" x="22" y="182" width="396" height="30"/>
+                                        <rect key="frame" x="22" y="172" width="396" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="h8F-P2-reN"/>
                                         </constraints>
@@ -46,14 +50,14 @@
                                         <color key="textColor" red="0.10929731478621815" green="0.18408739823025602" blue="0.70959595959595956" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8wx-Ht-pHa">
-                                        <rect key="frame" x="22" y="222" width="396" height="264"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ciudad Berlin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8wx-Ht-pHa">
+                                        <rect key="frame" x="22" y="212" width="396" height="264"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8wx-Ht-pHa" secondAttribute="height" multiplier="3:2" id="RGe-Rj-frN"/>
                                         </constraints>
                                     </imageView>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voh-ks-6wA">
-                                        <rect key="frame" x="22" y="506" width="396" height="396"/>
+                                        <rect key="frame" x="22" y="496" width="396" height="396"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="voh-ks-6wA" secondAttribute="height" id="Puh-im-GCf"/>
                                         </constraints>
@@ -61,7 +65,7 @@
                                     </mapView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="9rR-rL-XDO" firstAttribute="top" secondItem="XgJ-Tq-v1C" secondAttribute="top" constant="10" id="7Lw-cO-63a"/>
+                                    <constraint firstItem="9rR-rL-XDO" firstAttribute="top" secondItem="XgJ-Tq-v1C" secondAttribute="top" id="7Lw-cO-63a"/>
                                     <constraint firstItem="8wx-Ht-pHa" firstAttribute="centerX" secondItem="XgJ-Tq-v1C" secondAttribute="centerX" id="7wY-9c-efh"/>
                                     <constraint firstItem="8wx-Ht-pHa" firstAttribute="width" secondItem="9rR-rL-XDO" secondAttribute="width" id="B8Y-id-4H7"/>
                                     <constraint firstItem="voh-ks-6wA" firstAttribute="centerX" secondItem="XgJ-Tq-v1C" secondAttribute="centerX" id="C2K-zq-JSM"/>
@@ -87,6 +91,12 @@
                             <constraint firstItem="5Sq-bn-FhY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z5E-yq-K9H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imvCiudad" destination="8wx-Ht-pHa" id="XSZ-Bz-0yP"/>
+                        <outlet property="lblPais" destination="V6V-Oz-UYl" id="qsq-4Z-EeP"/>
+                        <outlet property="mapCiudad" destination="voh-ks-6wA" id="Rbl-Xm-kRQ"/>
+                        <outlet property="srcCiudades" destination="XgJ-Tq-v1C" id="3bQ-n2-hvB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,6 +104,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Ciudad Berlin.jpg" width="1600" height="1066"/>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
